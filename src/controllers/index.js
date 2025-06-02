@@ -1,3 +1,3 @@
 module.exports = {
-  home: require("./home-controller"),
+  homeController: require("./home-controller"),
 };

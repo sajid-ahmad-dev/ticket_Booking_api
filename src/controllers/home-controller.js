@@ -1,5 +1,12 @@
-const homeController = (req, res) => {
-  res.json({ msg: "Ok, i m from controller module" });
+const { StatusCodes } = require("http-status-codes");
+
+const home = (req, res) => {
+  return res.status(StatusCodes.OK).json({
+    success: true,
+    message: "Api is Alive",
+    data: {},
+    error: {},
+  });
 };
 
-module.exports = { homeController };
+module.exports = { home };
